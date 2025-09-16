@@ -9,8 +9,8 @@ const poppins = localfont({
 
 export default function Home() {
   return (
-    <main className="bg-purple-100 ">
-      <section className="grid grid-cols-2 h-[50vh]">
+    <main className="bg-purple-100 h-[100vh]">
+      <section className="grid grid-cols-2 h-[70vh]">
         <div className=" flex flex-col gap-4 items-center justify-center">
           <p className={`text-3xl font-bold ${poppins.className}`}>
             The best URL Shortener in the world
@@ -36,8 +36,9 @@ export default function Home() {
         <div className=" flex justify-start relative">
           <Image
             src={"/vector.jpg"}
-            width={600}
-            height={300}
+            width={700}
+            height={100}
+            className="object-contain"
             alt="An Image of a vector"
           />
         </div>
