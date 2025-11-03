@@ -44,15 +44,12 @@ const Shorten = () => {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="mx-auto max-w-lg w-full bg-slate-800/90 border border-slate-700 p-8 rounded-2xl shadow-xl"
       >
-        {/* Heading */}
         <h1 className="font-bold text-3xl text-emerald-400 text-center">
           Generate Your Short URL
         </h1>
         <p className="mt-2 text-zinc-400 text-center text-sm">
           Paste your long link below and create a shorter, shareable version.
         </p>
-
-        {/* Form */}
         <div className="mt-6 flex flex-col gap-4">
           <input
             type="text"
@@ -75,8 +72,6 @@ const Shorten = () => {
             Generate
           </button>
         </div>
-
-        {/* Generated URL */}
         {generated && (
           <div className="mt-6 text-center">
             <span className="block text-lg font-semibold text-zinc-300">

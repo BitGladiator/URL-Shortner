@@ -4,7 +4,6 @@ export async function POST(request) {
     const client = await clientPromise;
     const db = client.db("shortner")
     const collection = db.collection("url")
-    //check if the short URL exists
     const doc = await collection.findOne({shortURL:body.shortURL})
     if(doc){
         return Response.json({success:false,error:true,message:"URL Already Exists"});

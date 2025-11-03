@@ -20,7 +20,6 @@ const About = () => {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="bg-slate-800/90 backdrop-blur-md border border-slate-700 shadow-xl rounded-2xl p-10 max-w-3xl w-full"
       >
-        {/* Heading */}
         <h1
           className={`text-4xl font-bold text-emerald-400 ${Merriweather.className}`}
         >
@@ -33,8 +32,6 @@ const About = () => {
           shareable URLs. It’s designed to make sharing links easier, improve
           readability, and provide a smooth user experience.
         </p>
-
-        {/* Features */}
         <h2
           className={`text-2xl font-semibold text-emerald-400 mt-8 ${Merriweather.className}`}
         >
@@ -53,8 +50,6 @@ const About = () => {
             </li>
           ))}
         </ul>
-
-        {/* Footer */}
         <p className="mt-8 text-zinc-400 leading-relaxed">
           This project demonstrates the core concepts of{" "}
           <span className="text-zinc-100 font-medium">

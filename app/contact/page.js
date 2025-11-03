@@ -12,15 +12,12 @@ const Contact = () => {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="bg-slate-800/90 backdrop-blur-md border border-slate-700 shadow-xl rounded-2xl p-10 max-w-2xl w-full"
       >
-        {/* Heading */}
         <h1 className="text-4xl font-bold text-emerald-400 text-center">
           Contact Us
         </h1>
         <p className="mt-3 text-zinc-400 text-center">
           Have questions or feedback? Reach out and we’ll get back to you.
         </p>
-
-        {/* Contact Form */}
         <form className="mt-8 space-y-6">
           <div>
             <label className="block text-zinc-300 mb-2">Name</label>
