@@ -33,10 +33,10 @@ const RocketIcon = () => (
   </svg>
 );
 const AnimatedDashboard = () => (
-  <div className="relative w-full h-[500px] bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl border border-slate-700/50 shadow-2xl overflow-hidden">
+  <div className="relative w-full h-[500px] bg-linear-to-br from-slate-800 to-slate-900 rounded-3xl border border-slate-700/50 shadow-2xl overflow-hidden">
     <div className="absolute top-0 left-0 right-0 h-16 bg-slate-800/80 backdrop-blur-sm border-b border-slate-700/50 flex items-center justify-between px-6">
       <div className="flex items-center gap-3">
-        <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg"></div>
+        <div className="w-8 h-8 bg-linear-to-r from-emerald-500 to-cyan-500 rounded-lg"></div>
         <span className="text-white font-semibold">URL Manager</span>
       </div>
       <div className="flex gap-2">
@@ -52,7 +52,7 @@ const AnimatedDashboard = () => (
             <div className="text-slate-400 text-sm mb-2">Enter URL</div>
             <div className="h-2 bg-slate-600 rounded w-3/4"></div>
           </div>
-          <div className="w-24 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-xl flex items-center justify-center">
+          <div className="w-24 bg-linear-to-r from-emerald-500 to-cyan-500 rounded-xl flex items-center justify-center">
             <span className="text-white font-semibold text-sm">Shorten</span>
           </div>
         </div>
@@ -68,7 +68,7 @@ const AnimatedDashboard = () => (
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 + index * 0.1 }}
-            className={`bg-gradient-to-r ${card.color} rounded-2xl p-4 text-white`}
+            className={`bg-linear-to-r ${card.color} rounded-2xl p-4 text-white`}
           >
             <div className="text-2xl font-bold">{card.value}</div>
             <div className="text-sm opacity-80">Clicks Today</div>
@@ -147,9 +147,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
+    <main className="min-h-screen bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.15),rgba(255,255,255,0))]"></div>
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-600 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-slate-600 to-transparent"></div>
       
       <div className="relative z-10 container mx-auto px-6 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -165,7 +165,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-3 bg-slate-800/30 border border-slate-700 rounded-full px-4 py-2 w-fit backdrop-blur-sm"
             >
-              <div className="w-2 h-2 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-linear-to-r from-emerald-400 to-cyan-400 rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-slate-300">
                 Enterprise-Grade URL Management
               </span>
@@ -177,15 +177,15 @@ export default function Home() {
               className="space-y-6"
             >
               <h1 className={`text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight ${poppins.className}`}>
-                <span className="bg-gradient-to-br from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+                <span className="bg-linear-to-br from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
                   Shorten
                 </span>
                 <br />
-                <span className="bg-gradient-to-br from-emerald-300 via-cyan-300 to-blue-300 bg-clip-text text-transparent">
+                <span className="bg-linear-to-br from-emerald-300 via-cyan-300 to-blue-300 bg-clip-text text-transparent">
                   Analyze
                 </span>
                 <br />
-                <span className="bg-gradient-to-br from-blue-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
+                <span className="bg-linear-to-br from-blue-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
                   Optimize
                 </span>
               </h1>
@@ -218,7 +218,7 @@ export default function Home() {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group relative bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 shadow-2xl shadow-emerald-500/20"
+                  className="group relative bg-linear-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 shadow-2xl shadow-emerald-500/20"
                 >
                   <span className="flex items-center gap-3">
                     Start For Free
@@ -256,7 +256,7 @@ export default function Home() {
                   whileHover={{ y: -2 }}
                   className="flex items-start gap-4 p-4 rounded-xl bg-slate-800/20 border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300"
                 >
-                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-lg flex items-center justify-center">
+                  <div className="shrink-0 w-10 h-10 bg-linear-to-br from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-lg flex items-center justify-center">
                     <div className="text-emerald-400">
                       {feature.icon}
                     </div>
@@ -292,7 +292,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1 }}
-              className="absolute -top-6 -right-6 bg-gradient-to-br from-emerald-500 to-cyan-500 p-4 rounded-2xl shadow-2xl shadow-emerald-500/25"
+              className="absolute -top-6 -right-6 bg-linear-to-br from-emerald-500 to-cyan-500 p-4 rounded-2xl shadow-2xl shadow-emerald-500/25"
             >
               <div className="text-white text-center">
                 <div className="text-2xl font-bold">⚡</div>
