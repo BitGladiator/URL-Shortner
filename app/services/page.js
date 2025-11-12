@@ -33,7 +33,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-950 px-6 py-20">
+    <div className="flex items-center justify-center min-h-screen bg-linear-to-br from-slate-900 via-gray-900 to-slate-950 px-6 py-20">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

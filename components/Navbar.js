@@ -24,18 +24,16 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center space-x-3"
           >
-            <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-linear-to-r from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
               <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
               </svg>
             </div>
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-linear-to-r from-white to-slate-300 bg-clip-text text-transparent">
                 ShortLink
               </span>
-              <span className="text-xs text-emerald-400 font-medium bg-emerald-400/10 px-2 py-1 rounded-full">
-                PRO
-              </span>
+           
             </Link>
           </motion.div>
           <motion.div
@@ -57,7 +55,7 @@ const Navbar = () => {
                 >
                   {item.name}
                 </motion.span>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-linear-to-r from-emerald-500 to-cyan-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
           </motion.div>
@@ -77,7 +75,7 @@ const Navbar = () => {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 px-6 py-2 rounded-xl font-semibold text-white transition-all duration-300 shadow-lg shadow-emerald-500/20"
+                className="bg-linear-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 px-6 py-2 rounded-xl font-semibold text-white transition-all duration-300 shadow-lg shadow-emerald-500/20"
               >
                 Get Started
               </motion.button>
@@ -133,7 +131,7 @@ const Navbar = () => {
                     <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 px-6 py-3 rounded-xl font-semibold text-white transition-all duration-300 shadow-lg shadow-emerald-500/20"
+                      className="w-full bg-linear-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 px-6 py-3 rounded-xl font-semibold text-white transition-all duration-300 shadow-lg shadow-emerald-500/20"
                     >
                       Get Started
                     </motion.button>
@@ -144,7 +142,7 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 to-cyan-500/5 pointer-events-none -z-10"></div>
+      <div className="absolute inset-0 bg-linear-to-r from-emerald-500/5 to-cyan-500/5 pointer-events-none -z-10"></div>
     </nav>
   );
 };

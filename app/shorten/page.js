@@ -92,7 +92,7 @@ const Shorten = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-950 pt-20">
+    <div className="min-h-screen bg-linear-to-br from-slate-900 via-gray-900 to-slate-950 pt-20">
       <section className="py-12 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -114,7 +114,7 @@ const Shorten = () => {
             className="text-4xl md:text-5xl font-bold text-white mb-4"
           >
             Shorten Your Links in
-            <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent block">
+            <span className="bg-linear-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent block">
               Seconds
             </span>
           </motion.h1>
@@ -140,7 +140,7 @@ const Shorten = () => {
             >
               <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 h-full">
                 <div className="flex items-center gap-3 mb-8">
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-linear-to-br from-emerald-500 to-cyan-500 rounded-xl flex items-center justify-center">
                     <Link2 className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -195,7 +195,7 @@ const Shorten = () => {
                     className={`w-full py-4 rounded-xl font-semibold text-lg transition-all duration-300 ${
                       isLoading || !URL
                         ? "bg-slate-700 text-slate-400 cursor-not-allowed"
-                        : "bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white shadow-lg shadow-emerald-500/20"
+                        : "bg-linear-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white shadow-lg shadow-emerald-500/20"
                     }`}
                   >
                     {isLoading ? (
@@ -278,7 +278,7 @@ const Shorten = () => {
                       transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
                       className="flex items-center gap-4 p-3 rounded-lg hover:bg-slate-700/30 transition-colors"
                     >
-                      <div className="w-12 h-12 bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-linear-to-br from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <div className="text-emerald-400">
                           {feature.icon}
                         </div>
